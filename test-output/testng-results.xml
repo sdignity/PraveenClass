@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-01-28T08:33:43 IST" name="Default suite" finished-at="2022-01-28T08:35:01 IST" duration-ms="77993">
+    <groups>
+    </groups>
+    <test started-at="2022-01-28T08:33:43 IST" name="Default test" finished-at="2022-01-28T08:35:01 IST" duration-ms="77993">
+      <class name="com.petstore.ui.testclass.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.petstore.ui.testclass.HomePageTest@6e171cd7]" started-at="2022-01-28T08:33:43 IST" name="setUp" finished-at="2022-01-28T08:34:14 IST" duration-ms="30922" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyHomePageTitleTest()[pri:1, instance:com.petstore.ui.testclass.HomePageTest@6e171cd7]" started-at="2022-01-28T08:34:14 IST" name="verifyHomePageTitleTest" finished-at="2022-01-28T08:34:18 IST" duration-ms="3875" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.petstore.ui.testclass.HomePageTest@6e171cd7]" started-at="2022-01-28T08:34:18 IST" name="tearDown" finished-at="2022-01-28T08:34:20 IST" duration-ms="2128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.petstore.ui.testclass.HomePageTest@6e171cd7]" started-at="2022-01-28T08:34:20 IST" name="setUp" finished-at="2022-01-28T08:34:28 IST" duration-ms="7690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifySignInButton()[pri:2, instance:com.petstore.ui.testclass.HomePageTest@6e171cd7]" started-at="2022-01-28T08:34:28 IST" name="VerifySignInButton" finished-at="2022-01-28T08:34:30 IST" duration-ms="2363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySignInButton -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.petstore.ui.testclass.HomePageTest@6e171cd7]" started-at="2022-01-28T08:34:30 IST" name="tearDown" finished-at="2022-01-28T08:34:34 IST" duration-ms="3599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.petstore.ui.testclass.HomePageTest@6e171cd7]" started-at="2022-01-28T08:34:34 IST" name="setUp" finished-at="2022-01-28T08:34:39 IST" duration-ms="5366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="clickRegistarionLink()[pri:3, instance:com.petstore.ui.testclass.HomePageTest@6e171cd7]" started-at="2022-01-28T08:34:39 IST" name="clickRegistarionLink" finished-at="2022-01-28T08:34:42 IST" duration-ms="3119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickRegistarionLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.petstore.ui.testclass.HomePageTest@6e171cd7]" started-at="2022-01-28T08:34:42 IST" name="tearDown" finished-at="2022-01-28T08:34:45 IST" duration-ms="2391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.petstore.ui.testclass.HomePageTest@6e171cd7]" started-at="2022-01-28T08:34:45 IST" name="setUp" finished-at="2022-01-28T08:34:49 IST" duration-ms="4865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="createNewUser()[pri:4, instance:com.petstore.ui.testclass.HomePageTest@6e171cd7]" started-at="2022-01-28T08:34:49 IST" name="createNewUser" finished-at="2022-01-28T08:34:58 IST" duration-ms="8732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.petstore.ui.testclass.HomePageTest@6e171cd7]" started-at="2022-01-28T08:34:58 IST" name="tearDown" finished-at="2022-01-28T08:35:01 IST" duration-ms="2646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.petstore.ui.testclass.HomePageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
