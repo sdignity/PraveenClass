@@ -9,15 +9,20 @@ import org.testng.annotations.Test;
 import com.petstore.ui.baseclass.Baseclass;
 import com.petstore.ui.pages.HomePage;
 import com.petstore.ui.pages.LoginPage;
+import com.petstore.ui.pages.PurchasePage;
+import com.petstore.ui.pages.PurchasePage2;
 import com.petstore.ui.pages.RegistrationPage;
 import com.petstore.ui.pages.SignInPage;
+import com.petstore.ui.util.TestUtil;
 
 public class HomePageTest extends Baseclass {
 	HomePage HomePage;
 	LoginPage LoginPage;
 	SignInPage SignInPage;
 	RegistrationPage RegistrationPage;
-//	TestUtil testUtil;
+	PurchasePage PurchasePage;
+	PurchasePage2 PurchasePage2;
+	TestUtil testUtil;
 
 	public HomePageTest() {
 	super();
@@ -30,7 +35,9 @@ public class HomePageTest extends Baseclass {
 	SignInPage = new SignInPage();
 	LoginPage = new LoginPage();
 	RegistrationPage = new RegistrationPage();
-//	testUtil = new TestUtil();
+	PurchasePage = new PurchasePage();
+	PurchasePage2=new PurchasePage2();
+	testUtil = new TestUtil();
 	}
 
 	@Test(priority = 1)
@@ -56,22 +63,32 @@ public class HomePageTest extends Baseclass {
 	RegistrationPage = LoginPage.ClickRegisterNowClick();
 	}
 
-
-
-	/*
-	 * @DataProvider public Object[][] getRegistrationData() throws Exception{
-	 * Object data[][] = TestUtil.getTestData("Sheet1"); return data; }
-	 */
-	@Test(priority = 4)
-	public void createNewUser() {
+	 @DataProvider
+	 public Object[][] getRegistrationData() throws Exception{
+	 Object data[][] = TestUtil.getTestData("Sheet1"); 
+	 return data; 
+	 }
+	 
+	@Test(priority = 5,dataProvider="getRegistrationData")
+	public void createNewUser(String Uname, String pwd, String rpwd, String fname, String lname, String email,
+			String phone, String address1, String address2, String city, String state, String zipcode, String country,
+			String language, String category) {
 	SignInPage = HomePage.clickOnEntertheStoreLink();
 	LoginPage = SignInPage.ClickSignInClick(); //
 	RegistrationPage = LoginPage.ClickRegisterNowClick();
 	// RegistrationPage.enteruserdetails();
-	RegistrationPage.enteruserdetailsType1("kudil", "kudil@123","kudil@123", "Kudil", "sri", "kudil23@gmail.com",
-	"123456", "1,North street", "south rampat", "thanjavur", "tn", "613001", "india",
-	"english", "FISH");
+	RegistrationPage.enteruserdetailsType1(Uname, pwd,  rpwd,  fname,  lname,  email,
+			phone,  address1,  address2,  city,  state,  zipcode, country,
+			language,  category);
 	LoginPage = RegistrationPage.clickSaveAccountInformation();
+	}
+	
+	@Test(priority = 0)
+	public void VerifyAddCart() {
+	SignInPage= HomePage.clickOnEntertheStoreLink();
+	HomePage=	PurchasePage.ClickOnLinks();
+	PurchasePage= PurchasePage2.ClickOnLinks2();
+
 	}
 
 	@AfterMethod
